@@ -1,0 +1,56 @@
+<html>
+    <script>
+        //codigo para verificar se o número é dividido por  3 ou por 5
+
+        //criando uma variável  para armazernar o resultado
+        var resultado;
+        //criando a funçao para verificar se o número é divido por 3 ou 5
+
+        function solucao( numero){
+           /*
+            if(numero % 3 === 0 || numero % 5 ===0){
+                return true;
+            }else{
+                return false;
+            }
+            */
+           return (numero % 3 === 0 || numero % 5 ===0);
+        }
+
+        //Criando uma função para verificar varios números se é divisivel por  3 ou 5
+        function verificarIntervalo(inicial, final){
+
+            var soma = 0;
+            var multiplicacao = 1;
+            var contador = 0;
+            var controle = inicial;
+            while (controle < final){
+              if( solucao(controle)){
+                  console.log(controle);
+                  contador = contador + 1;
+                  soma = soma + controle;
+                  multiplicacao = multiplicacao * controle;
+              }
+
+                controle = controle + 1;
+                
+            }
+
+            for (var controle =inicial; controle < final; controle++){
+              if( solucao(controle)){
+                  console.log(controle);
+                   contador++;
+                  soma += controle;
+                  multiplicacao *= controle;
+              }
+
+                controle = controle + 1;
+                
+            }
+           console.log(`Quantidade " ${contador}`);
+           console.log("valor " + soma);
+           console.log("valor " + multiplicacao);
+        }
+        
+    </script>
+</html>
