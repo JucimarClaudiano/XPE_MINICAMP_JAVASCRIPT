@@ -1,0 +1,30 @@
+<html>
+    <script>
+        //criando um programa para utilizar o While
+
+        //criando a variavel array para armazenar os nomes
+        var nomes = ['Marcio', 'Paulo', 'Rubens', 'Gilson', 'Jose', 'Pedro']
+        /* imprimindo na tela no modo tradicional
+        console.log(nomes[0]);
+        console.log(nomes[1]);
+        console.log(nomes[2]);
+        console.log(nomes[3]);
+        console.log(nomes[4]);
+        */
+
+        // usando o while para acessar o array
+        // criando uma variável para ser o contador
+        var contador = 0;
+        var i = 0;
+        while(i < nomes.length){
+            //console.log(nomes[i]);
+                if(nomes[i] == 'Marcio' || nomes[i] == 'Paulo'){
+                console.log(nomes[i]);
+                contador = contador + 1;
+                }
+            //incrementando o controlador
+            i++;
+        }
+        console.log(contador);
+    </script>
+</html>

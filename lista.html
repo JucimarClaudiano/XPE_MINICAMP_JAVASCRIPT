@@ -1,0 +1,58 @@
+<html>
+    <script>
+        //Criando uma lista 
+
+        //criando a lista
+        var carros = ['gol', 'up', 'fusca'];
+        var primeiroCarro = carros[0];
+        var segundoCarro = carros[1];
+        var terceiroCarro = carros[2];
+
+        console.log("Primeiro Carro " + carros[0]);
+        console.log("Segundo Carro " + carros[1]);
+        console.log("Terceiro Carro " + carros[2]);
+
+        //trocando a informação do array
+        carros[2] = "argo";
+        console.log(carros[2]);
+
+        //verificando a quantidade de elemento no array
+        console.log("Tamanho do array "+ carros.length);
+
+       //pegando o último elemento da lista
+       console.log("último elemento do array " + carros[ carros.length -1]);
+
+       //inserir um novo elemento no array
+       carros[3] = "sandero";
+       console.log("último elemento do array " + carros[ carros.length -1]);
+       console.log("Tamanho do array "+ carros.length);
+
+       //inserindo um novo elemento sem saber o último indice
+       carros[carros.length] = "corsa";
+       console.log("último elemento do array " + carros[ carros.length -1]);
+       console.log("Tamanho do array "+ carros.length);
+
+       //inserindo um novo elemento usando a função push
+       carros.push("Polo");
+       console.log("último elemento do array " + carros[ carros.length -1]);
+       console.log("Tamanho do array "+ carros.length);
+
+       //Removendo o último elemento da lista usando o pop
+       carros.pop()
+       console.log("último elemento do array " + carros[ carros.length -1]);
+       console.log("Tamanho do array "+ carros.length);
+
+       //Inserindo o cliente na primeiro indice 
+       carros.unshift("BMW");
+       console.log("último elemento do array " + carros[ carros.length -1]);
+       console.log("Tamanho do array "+ carros.length);
+       console.log(carros);
+
+       //removendo o arquivo do primeiro indice
+       carros.shift();
+       console.log("último elemento do array " + carros[ carros.length -1]);
+       console.log("Tamanho do array "+ carros.length);
+       console.log(carros);
+       
+    </script>
+</html>

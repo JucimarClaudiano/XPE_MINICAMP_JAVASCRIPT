@@ -1,0 +1,31 @@
+<html>
+    <script>
+        //programa para fazer uma calculadora
+
+        //criando uma variável para armazenar a resultado
+        var resultado;
+
+        //criando uma função 
+        function calculadora (operacao, number1, number2)
+        {
+            if (operacao === "ADICAO"){
+             resultado =  number1 + number2;
+            }else if(operacao === "SUBTRACAO"){
+              resultado = number1 - number2;
+            }else if(operacao === "DIVISAO"){
+             resultado =  resultado = number1 / number2;
+            }else if(operacao === "MULTIPLICACAO"){
+              resultado = rnumber1 * number2;
+            }else if (operacao === "RESTO"){
+              resultado = number1 % number2;
+            }else if (operacao == "PERCENTUAL"){
+              resultado =   (number1 * number2) / 100;
+            } else{
+                console.log("default nenhuma das opções está disponíveis")
+            }
+                return resultado
+        }
+        var valor = calculadora("RESTO", 10,10);
+            console.log("Valor do calculo " + valor);
+    </script>
+</html>

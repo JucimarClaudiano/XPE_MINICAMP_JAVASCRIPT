@@ -1,0 +1,3 @@
+String trabalha com aspas simples ou aspas simples
+Number inteiro ou  decimais.
+boolean verdadeiro ou falso
