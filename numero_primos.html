@@ -7,18 +7,36 @@
 
            //Segundo passo verificar se o número é impar
            //criar uma array de numeros primos de 1 a 11
-            var primos= [2,3,5,7,11]
+
+           //Criando uma função para verificar o vetor a quantidade de zero
+           function verifcarQuantidadeDeZero()
+           {
+            for(var j = 0; j < valor.length; j++)
+                     {
+                          if (valor[0] === 0 &&  valor.length -1 === 0)
+                          {
+                            console.log ("numero primo");
+                          }
+
+                         } 
+           }
+           var valor = [];
+
            //Criando a função
            function verificarNumeroPrimo(numero){
-            if(numero % 2 === 1 ) {
-                console.log("Numero impar");
-                for (var i = 0; i <= numero; i++){
-                    console.log(i);
-                }
+            if(numero % 2 >= 1 ) {
                 
-            
-            }
+                for(var i  = 1; i <= numero; i++){
+                    var sobra =  numero % i;
+                        valor.push(sobra);
 
+                        //chamando a função
+                      verifcarQuantidadeDeZero();
+                        } 
+                     } else {
+                        console.log("Número não é primo");
+                        
+                     } 
            }
         
     </script>
